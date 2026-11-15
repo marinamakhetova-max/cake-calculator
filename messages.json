@@ -1,0 +1,295 @@
+{
+ "chat": "Олег ↔ Marina Makhetova",
+ "from": "2026-11-14",
+ "count": 32,
+ "messages": [
+  {
+   "id": 547758,
+   "date": "2026-11-14T11:56:40+01:00",
+   "from": "Marina Makhetova",
+   "text": "",
+   "media": "document",
+   "file": "files/547758_.jpg",
+   "reply_to": null
+  },
+  {
+   "id": 547759,
+   "date": "2026-11-14T11:56:40+01:00",
+   "from": "Marina Makhetova",
+   "text": "",
+   "media": "document",
+   "file": "files/547759_.jpg",
+   "reply_to": null
+  },
+  {
+   "id": 547760,
+   "date": "2026-11-14T11:56:40+01:00",
+   "from": "Marina Makhetova",
+   "text": "",
+   "media": "document",
+   "file": "files/547760_.jpg",
+   "reply_to": null
+  },
+  {
+   "id": 547761,
+   "date": "2026-11-14T11:56:40+01:00",
+   "from": "Marina Makhetova",
+   "text": "",
+   "media": "document",
+   "file": "files/547761_.jpg",
+   "reply_to": null
+  },
+  {
+   "id": 547762,
+   "date": "2026-11-14T11:56:40+01:00",
+   "from": "Marina Makhetova",
+   "text": "",
+   "media": "document",
+   "file": "files/547762_.jpg",
+   "reply_to": null
+  },
+  {
+   "id": 547763,
+   "date": "2026-11-14T11:56:40+01:00",
+   "from": "Marina Makhetova",
+   "text": "",
+   "media": "document",
+   "file": "files/547763_.rtf",
+   "reply_to": null
+  },
+  {
+   "id": 547764,
+   "date": "2026-11-14T11:56:40+01:00",
+   "from": "Marina Makhetova",
+   "text": "Олег, здравствуйте) скину сюда два кейса заказных тортов для калькулятора) может быть пригодится для условного калькулятор",
+   "media": "document",
+   "file": "files/547764_.xlsx",
+   "reply_to": null
+  },
+  {
+   "id": 547765,
+   "date": "2026-11-14T11:56:56+01:00",
+   "from": "Marina Makhetova",
+   "text": "",
+   "media": "document",
+   "file": "files/547765_.rtf",
+   "reply_to": null
+  },
+  {
+   "id": 547766,
+   "date": "2026-11-14T11:56:57+01:00",
+   "from": "Marina Makhetova",
+   "text": "",
+   "media": "photo",
+   "file": "files/547766_.jpg",
+   "reply_to": null
+  },
+  {
+   "id": 547767,
+   "date": "2026-11-14T11:56:57+01:00",
+   "from": "Marina Makhetova",
+   "text": "",
+   "media": "photo",
+   "file": "files/547767_.jpg",
+   "reply_to": null
+  },
+  {
+   "id": 547768,
+   "date": "2026-11-14T11:56:57+01:00",
+   "from": "Marina Makhetova",
+   "text": "",
+   "media": "photo",
+   "file": "files/547768_.jpg",
+   "reply_to": null
+  },
+  {
+   "id": 547769,
+   "date": "2026-11-14T11:58:40+01:00",
+   "from": "Marina Makhetova",
+   "text": "может быть это не совсем то, что нужно... но мысль такова - вот я ему накидываю некую память, откуда он потом будет брать данные и помогать с пропорциями и весом заказных тортов",
+   "media": null,
+   "file": null,
+   "reply_to": null
+  },
+  {
+   "id": 547770,
+   "date": "2026-11-14T12:00:57+01:00",
+   "from": "Marina Makhetova",
+   "text": "а вот в каком виде, пока затрудняюсь сформулировать) в тилипад можно задать коэффициент пересчета, исходя из тех карты и выхода например на диаметр торта 18 см, но там не учитывается вес декора, обтяжки и тд. поэтому хочется более удобный инструмент, который будет учитывать память прошлых заказов и фэйлов, ошибок расчета если можно так сказать",
+   "media": null,
+   "file": null,
+   "reply_to": null
+  },
+  {
+   "id": 547771,
+   "date": "2026-11-14T12:03:34+01:00",
+   "from": "Олег",
+   "text": "класс! спасибо, выгружаю) а по поводу завтра — если не получается у вас, может, перенесем? у Марии тоже не получается, у Анастасии тоже)",
+   "media": null,
+   "file": null,
+   "reply_to": null
+  },
+  {
+   "id": 547772,
+   "date": "2026-11-14T12:04:24+01:00",
+   "from": "Marina Makhetova",
+   "text": "А да? Не знала, я могу вечером по крск в 18-19:00 точно буду дома",
+   "media": null,
+   "file": null,
+   "reply_to": null
+  },
+  {
+   "id": 547773,
+   "date": "2026-11-14T12:05:23+01:00",
+   "from": "Олег",
+   "text": "хорошо, 18:00 крск / 12:00 мск тогда)",
+   "media": null,
+   "file": null,
+   "reply_to": null
+  },
+  {
+   "id": 547774,
+   "date": "2026-11-14T12:05:47+01:00",
+   "from": "Marina Makhetova",
+   "text": "Это 16:00 по крск",
+   "media": null,
+   "file": null,
+   "reply_to": null
+  },
+  {
+   "id": 547775,
+   "date": "2026-11-14T12:05:52+01:00",
+   "from": "Marina Makhetova",
+   "text": "Если в 14 мск ?)",
+   "media": null,
+   "file": null,
+   "reply_to": null
+  },
+  {
+   "id": 547776,
+   "date": "2026-11-14T12:07:08+01:00",
+   "from": "Олег",
+   "text": "а, то есть у вас сейчас 16:00?) 14:00 мск вряд ли... дело в том, что у меня завтра день рождения, и к этому времени уже буду немного праздновать 😅🥂",
+   "media": null,
+   "file": null,
+   "reply_to": null
+  },
+  {
+   "id": 547782,
+   "date": "2026-11-14T12:13:17+01:00",
+   "from": "Marina Makhetova",
+   "text": "Нет, у нас сейчас 18 :)",
+   "media": null,
+   "file": null,
+   "reply_to": null
+  },
+  {
+   "id": 547783,
+   "date": "2026-11-14T12:13:27+01:00",
+   "from": "Marina Makhetova",
+   "text": "Разница во времени 4 часа :)",
+   "media": null,
+   "file": null,
+   "reply_to": null
+  },
+  {
+   "id": 547784,
+   "date": "2026-11-14T12:13:42+01:00",
+   "from": "Олег",
+   "text": "да-да, уже посмотрел)",
+   "media": null,
+   "file": null,
+   "reply_to": 547782
+  },
+  {
+   "id": 547785,
+   "date": "2026-11-14T12:13:44+01:00",
+   "from": "Marina Makhetova",
+   "text": "12+4 = 16 😇",
+   "media": null,
+   "file": null,
+   "reply_to": null
+  },
+  {
+   "id": 547786,
+   "date": "2026-11-14T12:14:00+01:00",
+   "from": "Marina Makhetova",
+   "text": "Давайте попробуем в 16:00 по нашему и 12 по мск",
+   "media": null,
+   "file": null,
+   "reply_to": null
+  },
+  {
+   "id": 547787,
+   "date": "2026-11-14T12:14:06+01:00",
+   "from": "Олег",
+   "text": "давайте! спасибо!",
+   "media": null,
+   "file": null,
+   "reply_to": null
+  },
+  {
+   "id": 547788,
+   "date": "2026-11-14T12:14:21+01:00",
+   "from": "Marina Makhetova",
+   "text": "Ой, ну буду завтра поздравлять 😇",
+   "media": null,
+   "file": null,
+   "reply_to": null
+  },
+  {
+   "id": 547789,
+   "date": "2026-11-14T12:14:29+01:00",
+   "from": "Олег",
+   "text": "спасибо!!",
+   "media": null,
+   "file": null,
+   "reply_to": null
+  },
+  {
+   "id": 547790,
+   "date": "2026-11-14T12:14:53+01:00",
+   "from": "Marina Makhetova",
+   "text": "Если вам вообще завтра хочется отдохнуть, то можем перенести в целом на другой день",
+   "media": null,
+   "file": null,
+   "reply_to": null
+  },
+  {
+   "id": 547791,
+   "date": "2026-11-14T12:15:13+01:00",
+   "from": "Олег",
+   "text": "нет-нет, в 12:00 отлично!",
+   "media": null,
+   "file": null,
+   "reply_to": null
+  },
+  {
+   "id": 547793,
+   "date": "2026-11-14T12:20:54+01:00",
+   "from": "Marina Makhetova",
+   "text": "Ну хорошо, мне тоже подходит ☺️",
+   "media": null,
+   "file": null,
+   "reply_to": null
+  },
+  {
+   "id": 547872,
+   "date": "2026-11-15T09:57:16+01:00",
+   "from": "Marina Makhetova",
+   "text": "Олег, добрый день. 🌞 я готова",
+   "media": null,
+   "file": null,
+   "reply_to": null
+  },
+  {
+   "id": 547873,
+   "date": "2026-11-15T09:58:45+01:00",
+   "from": "Олег",
+   "text": "Марина, добрый день! Очень рад! Подключайтесь) https://us06web.zoom.us/j/89136822322?pwd=I9bBlLKB5PpadmcvtyfjGv3cjLjJ08.1",
+   "media": "photo",
+   "file": "files/547873_.jpg",
+   "reply_to": null
+  }
+ ]
+}

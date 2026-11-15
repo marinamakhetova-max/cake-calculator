@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ef">
+  <title>Кондитерская · Калькулятор заказов</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="data.js"></script><script defer src="calculation.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <nav aria-label="Разделы">
+      <button data-page="calc" aria-current="page">Калькулятор</button>
+      <button data-page="library">Техкарты</button>
+      <button data-page="history">История заказов</button>
+    </nav>
+  </header>
+
+  <main>
+    <div id="calc" class="page">
+      <header class="pagehead"><div><h1>Калькулятор тортов</h1>
+        <p>Пересчёт сырья и выхода по выбранной техкарте.</p></div><button class="button outline" id="reset">Новый расчёт</button></header>
+      <div class="workspace">
+        <section class="panel">
+          <h2>Исходные данные</h2>
+          <form id="plan-form">
+            <div class="form-grid">
+              <label>Рецептура<select id="recipe" name="recipe" required></select></label>
+              <label>Способ расчёта<select id="mode" name="mode">
+                <option value="suggest">По весу с подбором размеров</option>
+                <option value="diameter">По заданным размерам</option>
+                <option value="mass">Только по весу</option>
+              </select></label>
+              <label id="target-field">Целевой вес без подложки, кг<input name="target" id="target" type="number" min="0.001" max="1000" step="any" required value="4"></label>
+              <label id="diameter-field" hidden><span id="width-label">Диаметр торта, см</span><input name="diameter" id="diameter" type="number" min="1" max="200" step="0.1" value="24"></label>
+              <label id="length-field" hidden>Длина торта, см<input name="length" id="length" type="number" min="1" max="200" step="0.1" value="32"></label>
+              <label>Гостей <span class="optional">необязательно</span><input name="guests" id="guests" type="number" min="1" max="10000" step="1"></label>
+            </div>
+            <div id="geometry-fields" class="form-section">
+              <h3>Форма и слои</h3>
+              <div class="form-grid">
+                <label class="full" id="geometry-select-field" hidden>Бисквит для расчёта диаметра<select name="geometryComponent" id="geometry-select"></select></label>
+                <label>Форма<select id="shape-type" name="shapeType"><option value="round">Круг</option><option value="oval">Овал</option><option value="rectangle">Прямоугольник</option></select></label>
+                <label id="ratio-field" hidden>Длина к ширине, ×<input name="ratio" id="ratio" type="number" min="1" max="10" step="any" value="1.5"></label>
+                <label>Слоёв бисквита в торте<input name="layers" id="layers" type="number" min="1" max="30" step="1" required value="3"></label>
+                <label><span id="trim-label">Обрезь выбранных слоёв, %</span><input name="trim" id="trim" type="number" min="0" max="99" step="any" required value="0"></label>
+                <label class="full">Толщина относительно техкарты, × <span class="optional">1 = исходная</span><input name="thickness" id="thickness" type="number" min="0.1" max="5" step="any" required value="1"></label>
+              </div>
+              <p id="geometry-source" class="field-info"></p>
+            </div>
+            <div class="form-section">
+              <h3>Отделка</h3>
+              <div class="finish-options">
+                <label><input name="coatEnabled" id="coat" type="checkbox" checked> Крем для обтяжки</label>
+                <label><input name="berryEnabled" id="berry" type="checkbox" checked> Клубника</label>
+                <label id="extra-field" hidden><input name="extraEnabled" id="extra" type="checkbox" checked> <span id="extra-label"></span></label>
+              </div>
+              <p id="finish-note" class="field-info"></p>
+            </div>
+            <p id="recipe-note" class="field-info"></p>
+            <div class="form-end"><span id="form-status" role="status"></span><div class="actions"><button class="button outline" id="save-draft" type="button">Сохранить черновик</button><button class="button primary" type="submit">Рассчитать</button></div></div>
+          </form>
+        </section>
+        <section class="panel summary" id="summary" aria-live="polite"></section>
+      </div>
+      <section class="panel results" id="results"></section>
+    </div>
+
+    <div id="history" class="page" hidden>
+      <header class="pagehead"><div><h1>История заказов</h1><p>Черновики и готовые заказы.</p></div><button class="button primary" id="add-case">＋ Добавить заказ</button></header>
+      <section class="panel" id="drafts-section"><h2>Черновики</h2><div id="drafts-list"></div></section>
+      <h2 class="history-heading">Готовые заказы</h2><div class="cards" id="history-list"></div>
+    </div>
+    <div id="library" class="page" hidden>
+      <header class="pagehead"><div><h1>Технологические карты</h1><p>Рецептуры, выход полуфабрикатов и закладка сырья.</p></div><button class="button primary" id="add-recipe">＋ Добавить рецептуру</button></header>
+      <div class="stack" id="library-list"></div>
+      <section class="panel sources">
+        <div class="section-line"><div><h2>Оригиналы техкарт</h2><p>Массы сырья из CSV и Excel загружаются в редакторе рецептуры.</p></div><label class="button outline file-button">＋ Прикрепить файлы<input id="source-file" type="file" multiple accept="image/*,.pdf,.xlsx,.xls,.csv,.rtf,.docx,.txt"></label></div>
+        <p id="files-status" role="status"></p><div id="file-list"></div>
+      </section>
+    </div>
+  </main>
+  <dialog id="dialog" aria-labelledby="dialog-title">
+    <div class="dialog-head"><h2 id="dialog-title"></h2><button type="button" id="dialog-close" aria-label="Закрыть">×</button></div>
+    <div id="dialog-body"></div>
+  </dialog>
+  <article id="printout"></article>
+</body>
+</html>
